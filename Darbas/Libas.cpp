@@ -385,11 +385,11 @@ void isvedimas(list<studentas>& lst, string pav) {
     failas.close();
 }
 
-void testas() {
+void testas(string name) {
     cout << "NAUDOJANT STRUKTURA:" << endl << endl;
     Timer t0;
     Timer t;
-    nuskaitymas_vec("stud100000.txt");
+    nuskaitymas_vec(name);
     float t1 = t.elapsed();
     cout << "Nuskaitymas uztruko: " << t1 << " s" << endl;
     t.reset();
@@ -399,13 +399,13 @@ void testas() {
     grupe_vec.clear();
     nabagai_vec.clear();
     float tv = t0.elapsed();
-    cout << "Visas testo laikas: " << tv << endl;
+    cout << "Visas testo laikas: " << tv << " s" << endl;
 
 
     cout << endl << "NAUDOJANT KLASE:" << endl << endl;
     t0.reset();
     t.reset();
-    Studentas::nuskaitymas_vec_("stud100000.txt");
+    Studentas::nuskaitymas_vec_(name);
     float t1_ = t.elapsed();
     cout << "Nuskaitymas uztruko: " << t1_ << " s" << endl;
     t.reset();
@@ -415,7 +415,7 @@ void testas() {
     grupe_vec_.clear();
     nabagai_vec.clear();
     float tv_ = t0.elapsed();
-    cout << "Visas testo laikas: " << tv_ << endl;
+    cout << "Visas testo laikas: " << tv_ << " s" << endl;
     cout << endl << "Nuskaitymo santykis (t_struct/t_class): " << t1 / t1_ << endl;
     cout << "Padalijimo santykis (t_struct/t_class): " << t2 / t2_ << endl;
     cout << "Viso testo laiko santykis (t_struct/t_class): " << tv / tv_ << endl;

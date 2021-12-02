@@ -46,6 +46,6 @@ public:
 	static void padalijimas3_(vector<Studentas>& vec);
 	static bool pred_(const Studentas &st);
 
-	
+	static void isvedimas_(vector<Studentas>& vec, string pav);
 };
 

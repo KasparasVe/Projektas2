@@ -140,8 +140,7 @@ void Studentas::nuskaitymas_vec_(string read) {
             tempas.nd_.push_back(k);
 
         }
-        
-        
+
         tempas.egzaminas_ = tempas.nd_.back();
         tempas.nd_.pop_back();
         sum = std::accumulate(tempas.nd_.begin(), tempas.nd_.end(), 0);
@@ -151,10 +150,6 @@ void Studentas::nuskaitymas_vec_(string read) {
 
 
     }
-
-    
-
-
 
 }
 
@@ -170,6 +165,19 @@ void Studentas::padalijimas3_(vector<Studentas>& vec) {
 }
 bool Studentas::pred_(const Studentas &st) {
     return st.galutinisVid_ >= 5;
+
+}
+
+void  Studentas::isvedimas_(vector<Studentas>& vec, string pav) {
+    std::ofstream failas;
+    failas.open(pav);
+    failas << std::setw(20) << std::left << "Vardas" << std::setw(20) << std::left << "Pavarde" << std::setw(20) << std::left << "Galutinis balas" << "\n";
+    for (auto p : vec) {
+
+        failas << std::setw(20) << std::left << p.vardas_ << std::setw(20) << std::left << p.pavarde_ << std::setw(20) << std::left << p.galutinisVid_ << "\n";
+    }
+
+    failas.close();
 
 }
 

@@ -48,7 +48,7 @@ void padalijimas3(vector<studentas>& vec);
 bool func(studentas st);
 bool pred(studentas st);
 
-void testas();
+void testas(string name);
 void uzpildymas();
 
 

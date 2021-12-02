@@ -19,7 +19,7 @@ int main()
     char ats;
     cout << "Ar norite atlikti testa STRUKTURAvsKLASE? Irasykite t, jei taip, n, jei ne: ";
     cin >> ats;
-    if (ats == 't') { testas(); }
+    if (ats == 't') { testas("stud1000000.txt"); }
     else { uzpildymas(); }
 
     system("pause");

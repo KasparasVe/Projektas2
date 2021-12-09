@@ -41,4 +41,4 @@ Nuskaitymo santykis (t_struct/t_class): 1.06001<br>
 Padalijimo santykis (t_struct/t_class): 1.7491<br>
 Viso testo laiko santykis (t_struct/t_class): 1.07821<br>
 
-**IŠVADOS:** naudojant /O1 programa veikia lėčiau, nuskaitymo laikas reikšmingai nesiskiria, padalijimas greitesnis naudojant klasę, bet nuskaitymo laiko santykis mažesnis negu naudojant /02.
+**IŠVADOS:** naudojant /O1 programa veikia lėčiau, nuskaitymo laikas reikšmingai nesiskiria, padalijimas greitesnis naudojant klasę, bet nuskaitymo laiko santykis mažesnis negu naudojant /O2.

@@ -41,4 +41,28 @@ Nuskaitymo santykis (t_struct/t_class): 1.06001<br>
 Padalijimo santykis (t_struct/t_class): 1.7491<br>
 Viso testo laiko santykis (t_struct/t_class): 1.07821<br>
 
-**IŠVADOS:** naudojant /O1 programa veikia lėčiau, nuskaitymo laikas reikšmingai nesiskiria, padalijimas greitesnis naudojant klasę, bet nuskaitymo laiko santykis mažesnis negu naudojant /O2.
+<h3>/Ox REZULTATAI SU 1 000 000 STUDENTŲ FAILU:</h3>
+
+**NAUDOJANT STRUKTŪRĄ:**<br>
+Nuskaitymas uztruko: 6.09894 s<br>
+Padalijimas uztruko: 0.192531 s<br>
+Visas testo laikas: 6.3313 s<br>
+
+**NAUDOJANT KLASĘ:**<br>
+Nuskaitymas uztruko: 6.20828 s<br>
+Padalijimas uztruko: 0.223738 s<br>
+Visas testo laikas: 6.45639 s<br>
+
+**LAIKŲ SANTYKIAI:**<br>
+Nuskaitymo santykis (t_struct/t_class): 0.982388<br>
+Padalijimo santykis (t_struct/t_class): 0.860518<br>
+Viso testo laiko santykis (t_struct/t_class): 0.980625<br>
+
+**IŠVADOS:** naudojant /Ox programa veikia greičiau už /O1, bet lėčiau už /O2.
+
+**exe failo dydžio palyginimas:**<br>
+O1: 44 kB<br>
+O2: 53.5 kB<br>
+Ox: 54.5 kB<br>
+
+
